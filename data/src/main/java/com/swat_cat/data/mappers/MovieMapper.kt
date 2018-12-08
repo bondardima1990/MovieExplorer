@@ -5,7 +5,7 @@ import com.swat_cat.domain.Mapper
 import com.swat_cat.domain.models.Movie
 
 class MovieMapper:Mapper<Movie?,MovieDTO?>{
-    override fun fromDto(from: MovieDTO?): Movie? {
+    override fun fromDto(from: MovieDTO?): Movie {
         return Movie(
             from?.title,
             from?.poster,

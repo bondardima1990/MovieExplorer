@@ -7,6 +7,6 @@ import io.reactivex.Observable
 import io.reactivex.Single
 
 interface MovieRepository{
-    fun findMoviesByQuery(query:String?):Single<List<Movie>>
-    fun findMovieByImdbId(id:String?):Maybe<MovieDetails>
+    fun findMoviesByQuery(query:String?):Single<List<Movie>?>?
+    fun findMovieByImdbId(id:String?):Maybe<MovieDetails?>
 }
