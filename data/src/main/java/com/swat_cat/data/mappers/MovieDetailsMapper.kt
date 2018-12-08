@@ -5,8 +5,8 @@ import com.swat_cat.domain.Mapper
 import com.swat_cat.domain.models.MovieDetails
 import com.swat_cat.domain.models.transformRaitingToDouble
 
-class MovieDetailsMapper:Mapper<MovieDetails,MovieDetailsDTO>{
-    override fun fromDto(from: MovieDetailsDTO?): MovieDetails? {
+class MovieDetailsMapper:Mapper<MovieDetails?,MovieDetailsDTO?>{
+    override fun fromDto(from: MovieDetailsDTO?): MovieDetails {
         return MovieDetails(
             from?.title,
             from?.poster,

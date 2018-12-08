@@ -6,5 +6,5 @@ import io.reactivex.Single
 import sun.reflect.generics.repository.ClassRepository
 
 class MovieListUseCase(private val repository: MovieRepository){
-    fun searchMovie(query:String?):Single<List<Movie>> = repository.findMoviesByQuery(query)
+    fun searchMovie(query:String?):Single<List<Movie>?>? = repository.findMoviesByQuery(query)
 }

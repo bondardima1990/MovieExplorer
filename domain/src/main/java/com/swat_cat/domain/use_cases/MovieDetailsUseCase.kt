@@ -5,5 +5,5 @@ import com.swat_cat.domain.repositories.MovieRepository
 import io.reactivex.Maybe
 
 class MovieDetailsUseCase(private val repository: MovieRepository){
-    fun getMovieDetails(id:String):Maybe<MovieDetails> = repository.findMovieByImdbId(id)
+    fun getMovieDetails(id:String):Maybe<MovieDetails?> = repository.findMovieByImdbId(id)
 }
