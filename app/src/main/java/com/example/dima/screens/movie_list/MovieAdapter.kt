@@ -13,6 +13,7 @@ import javax.security.auth.callback.Callback
 
 class MovieAdapter(val movies:List<Movie>,val callback: (movie:Movie)-> Unit): RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
 
+
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): ViewHolder {
         val view = LayoutInflater.from(p0.context).inflate(R.layout.movie_item,p0,false)
         return ViewHolder(view)
