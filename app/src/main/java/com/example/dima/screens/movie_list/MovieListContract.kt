@@ -8,8 +8,11 @@ interface MovieListContract{
         fun searchChanged():Observable<CharSequence>
         fun clean(clean:()->Unit)
         fun setMovieList(movies:List<Movie>, itemClicked: (movie:Movie)->Unit)
+        fun showProgress(boolean: Boolean)
+        fun showEmptY(boolean: Boolean)
     }
     interface Presenter{
-
+        fun start(view:MovieListContract.View)
+        fun stop()
     }
 }

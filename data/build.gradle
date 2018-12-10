@@ -45,7 +45,7 @@ dependencies {
     implementation 'com.squareup.okhttp3:okhttp:3.10.0'
     implementation libs.hawk
     implementation libs.timber
-    implementation libs.rxJava
+    implementation "io.reactivex.rxjava2:rxjava:2.2.4"
     implementation libs.rxAndroid
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 }
